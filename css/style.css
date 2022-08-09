@@ -1,0 +1,68 @@
+h1,h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-basis: 1200px;
+    background-color: rgba(0, 0, 255, 0.541);
+    border-radius: 10px;
+}
+
+img{
+    width: 150px;
+    left: 120px;
+}
+
+form{
+    border-radius: 20px;
+    display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+    
+}
+
+input:hover{
+    cursor: pointer;
+    border-color: blue;
+}
+
+#btn{
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: aquamarine;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+#btn:hover{
+    background: rgba(0, 0, 255, 0.418);
+    color: white;
+    cursor: pointer;
+}
+
+.lista{
+    display: flex;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.TabelaIMC{
+    list-style: none;
+}
+
+.ResultadosIMC{
+    list-style: none;
+}
+
+#res{
+    background-color: rgba(24, 77, 128, 0.37);
+}
