@@ -3,6 +3,7 @@ class Enviar{
         this.form = document.querySelector(".formulario");
         this.button = document.querySelector("#btn")
         this.resposta()
+        this.sexo()
     }
 
     resposta(){
@@ -25,8 +26,21 @@ class Enviar{
 
         return respostaimc;
     }
+
+    sexo(){
+        this.button.addEventListener("click",rd =>{
+        this.rd = document.querySelector('input[name="rd"]:checked').value;
+
+        if(this.rd==='masculino'){
+            res2.innerHTML=`O seu Vo2Máx é de ${225-this.idade}`
+        }else if(this.rd==='feminino'){
+            res2.innerHTML=`O seu Vo2Máx é de ${220-this.idade}`
+        }
+        }
+        
+    )}
+
+
 }
 
 const enviando= new Enviar();
-
-

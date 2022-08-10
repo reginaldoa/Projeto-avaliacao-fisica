@@ -64,7 +64,7 @@ input:hover{
     list-style: none;
 }
 
-#res{
+#res, #res2{
     background-color: rgba(24, 77, 128, 0.37);
 }
 
