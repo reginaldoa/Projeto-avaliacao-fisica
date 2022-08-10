@@ -35,6 +35,7 @@ input:hover{
     background: aquamarine;
     border-radius: 5px;
     letter-spacing: 2px;
+    margin: 5px;
 }
 
 #btn:hover{
@@ -70,5 +71,4 @@ input:hover{
 .masculino,.feminino{
     display: flex;
     flex-direction:column;
-
 }
