@@ -68,7 +68,3 @@ input:hover{
     background-color: rgba(24, 77, 128, 0.37);
 }
 
-.masculino,.feminino{
-    display: flex;
-    flex-direction:column;
-}
