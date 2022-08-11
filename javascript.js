@@ -18,8 +18,10 @@ class Enviar{
         this.idade = document.querySelector("#idade").value;
         this.peso = document.querySelector("#peso").value;
         this.altura = document.querySelector("#altura").value;
+        //Com essa expressão regular, o cliente não precisa colocar ponto ou vírgula, porém, caso coloque, não terá problemas.
+        this.alturafinal = this.altura.replace(/(\d{1,2}|\G\d{2})(?=(?:\d{2})+(?!\d))/g, "$1,");
         this.pesocomVIRGULA = parseFloat(this.peso.replace(',','.'));
-        this.alturacomVIRGULA = parseFloat(this.altura.replace(',','.')/100);
+        this.alturacomVIRGULA = parseFloat(this.alturafinal.replace(',','.'));
         let respostaimc = this.pesocomVIRGULA/(this.alturacomVIRGULA*this.alturacomVIRGULA);
 
         if(!Number(this.pesocomVIRGULA) || (!Number(this.alturacomVIRGULA)) || this.idade===''){ alert('Todos os campos devem ser preenchidos. Altura e peso devem ser preenchidos sem pontos ou vírgulas')}
