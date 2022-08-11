@@ -19,10 +19,10 @@ class Enviar{
         this.peso = document.querySelector("#peso").value;
         this.altura = document.querySelector("#altura").value;
         this.pesocomVIRGULA = parseFloat(this.peso.replace(',','.'));
-        this.alturacomVIRGULA = parseFloat(this.altura.replace(',','.'));
+        this.alturacomVIRGULA = parseFloat(this.altura.replace(',','.')/100);
         let respostaimc = this.pesocomVIRGULA/(this.alturacomVIRGULA*this.alturacomVIRGULA);
 
-        if(!Number(this.peso) || (!Number(this.altura)) || this.idade===''){ alert('Todos os campos devem ser preenchidos. Altura e peso devem ser preenchidos com números')}
+        if(!Number(this.pesocomVIRGULA) || (!Number(this.alturacomVIRGULA)) || this.idade===''){ alert('Todos os campos devem ser preenchidos. Altura e peso devem ser preenchidos sem pontos ou vírgulas')}
 
         return respostaimc;
     }
