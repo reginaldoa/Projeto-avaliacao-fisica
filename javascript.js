@@ -25,7 +25,7 @@ class Enviar{
         this.alturacomVIRGULA = parseFloat(this.alturafinal.replace(',','.'));
         let respostaimc = this.pesocomVIRGULA/(this.alturacomVIRGULA*this.alturacomVIRGULA);
 
-        if(this.nome===null||!Number(this.pesocomVIRGULA) || (!Number(this.alturacomVIRGULA)) || this.idade===''){ alert('Todos os campos devem ser preenchidos. Altura e peso devem ser preenchidos sem pontos ou vírgulas')}else{
+        if(!Number(this.pesocomVIRGULA) || (!Number(this.alturacomVIRGULA)) || this.idade===''){ alert('Todos os campos devem ser preenchidos. Altura e peso devem ser preenchidos sem pontos ou vírgulas')}else{
             return respostaimc;
         }
 
