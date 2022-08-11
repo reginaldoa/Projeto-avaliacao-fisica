@@ -10,11 +10,12 @@ class Enviar{
         this.button.addEventListener("click",e =>{
             e.preventDefault()
             const res =document.querySelector("#res")
-            return res.innerHTML=`O seu imc é de ${this.imc().toFixed(2)}`
+            return res.innerHTML=`${this.nome}, o seu imc é de ${this.imc().toFixed(2)}`
         })
     }
 
     imc(){
+        this.nome = document.querySelector("#nome").value;
         this.idade = document.querySelector("#idade").value;
         this.peso = document.querySelector("#peso").value;
         this.altura = document.querySelector("#altura").value;
