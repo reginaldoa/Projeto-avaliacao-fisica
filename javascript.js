@@ -41,11 +41,8 @@ class Enviar{
         }else if(this.rd==='feminino'){
             res2.innerHTML=`O seu Vo2Máx é de ${220-this.idade}`
         }
-        }
-        
+    }   
     )}
-
-
 }
 
 const enviando= new Enviar();
