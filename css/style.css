@@ -1,70 +1,69 @@
-h1,h2{
+h1, h2 {
     text-align: center;
+    color: #333; /* Cor cinza escuro */
 }
 
-.container{
+.container {
     display: flex;
     flex-basis: 1200px;
-    background-color: rgba(0, 0, 255, 0.541);
+    background-color: rgba(50, 50, 50, 0.7); /* Cor cinza escuro com opacidade */
     border-radius: 10px;
 }
 
-img{
+img {
     width: 150px;
     left: 120px;
 }
 
-form{
+form {
     border-radius: 20px;
     display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-    
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-input:hover{
+input:hover {
     cursor: pointer;
-    border-color: blue;
+    border-color: #333; /* Cor cinza escuro */
 }
 
-#btn{
+#btn {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
     overflow: hidden;
-    background: aquamarine;
+    background: #555; /* Cor cinza médio */
     border-radius: 5px;
     letter-spacing: 2px;
     margin: 5px;
 }
 
-#btn:hover{
-    background: rgba(0, 0, 255, 0.418);
+#btn:hover {
+    background: rgba(50, 50, 50, 0.5); /* Cor cinza médio com opacidade */
     color: white;
     cursor: pointer;
 }
 
-.lista{
+.lista {
     display: flex;
     border-radius: 20px;
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
+    background: rgba(50, 50, 50, 0.35); /* Cor cinza escuro com opacidade */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
+    border: 1px solid rgba(50, 50, 50, 0.18); /* Cor cinza escuro com opacidade */
 }
 
-.TabelaIMC{
+.TabelaIMC {
     list-style: none;
 }
 
-.ResultadosIMC{
+.ResultadosIMC {
     list-style: none;
 }
 
-#res, #res2{
-    background-color: rgba(24, 77, 128, 0.37);
+#res, #res2 {
+    background-color: rgba(255, 255, 255, 0.5); /* Cor cinza médio com opacidade */
+    color: black;
 }
-
